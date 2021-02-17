@@ -9,4 +9,10 @@ ul {
   display: -ms-flexbox;
   display: flex;
 }
+
+/*************** container ***************/
+.cont-1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=common.css.map */
