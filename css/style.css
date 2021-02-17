@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/********* 基本色 **********/
+/********* 寒色 **********/
+nav {
+  background-color: #00aaff;
+}
+
+nav ul {
+  height: 50px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav ul li {
+  color: #fff;
+  width: 15%;
+  margin-right: 5%;
+  padding-top: 16px;
+  text-align: center;
+}
+
+nav ul li:last-child {
+  margin-right: 0%;
+}
+
+nav ul li:hover {
+  background-color: #f9e900;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+// 固有CSS
+// このサイトにのみ使用
+@import "colors.scss";
+
+nav {
+  background-color: $happy_blue;
+  & ul {
+    height: 50px;
+    width: 1200px;
+    margin: 0 auto;
+    & li {
+      color: $white;
+      width: 15%;
+      margin-right: 5%;
+      padding-top: 16px;
+      text-align: center;
+      &:last-child{
+        margin-right: 0%;
+      }
+      &:hover{
+        background-color: $happy_yellow;
+      }
+    }
+  }
+}

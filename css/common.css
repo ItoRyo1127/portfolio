@@ -1,0 +1,12 @@
+/*************** style ***************/
+ul {
+  list-style: none;
+}
+
+/*************** position ***************/
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=common.css.map */
