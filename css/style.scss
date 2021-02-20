@@ -3,20 +3,26 @@
 @import "colors.scss";
 
 /*************** PC 1260px~ ***************/
+//common
 body {
   font-size: 16pt;
+  background: $sky_blue;
+}
+header {
+  position: sticky;
+  box-shadow: 0px 5px 0px -2px gray inset;
 }
 nav {
   background-color: $happy_blue;
   & ul {
     width: 1200px;
-    height: 50px;
+    height: 60px;
     margin: 0 auto;
     & li {
       color: $white;
       width: 15%;
       margin-right: 5%;
-      padding-top: 16px;
+      padding-top: 20px;
       text-align: center;
       &:last-child {
         margin-right: 0%;
@@ -27,7 +33,12 @@ nav {
     }
   }
 }
-
+h3 {
+  font-size: 25pt;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
 //top-image
 .top-img {
   width: 100%;
@@ -39,12 +50,6 @@ nav {
 // profile
 .profile {
   margin-top: 30px;
-  & h1 {
-    font-size: 25pt;
-    font-weight: 500;
-    text-decoration: underline;
-    margin-bottom: 15px;
-  }
   & th {
     font-weight: 500;
     min-width: 90px;
@@ -53,7 +58,6 @@ nav {
   & td {
     padding: 5px 0px;
   }
-
 }
 
 // career
@@ -65,14 +69,18 @@ nav {
     text-decoration: underline;
     margin-bottom: 15px;
   }
-  & th {
-    background: $sky_blue;
-    border: 1px solid black;
-    font-weight: 500;
-    min-width: 90px;
-    padding: 5px 0px;
-  }
-  & td {
-    padding: 5px 0px;
+  & table {
+    width: 100%;
+    & th {
+      background: $sky_yellow;
+      border: 1px solid black;
+      font-weight: 500;
+      min-width: 90px;
+      padding: 5px 10px;
+    }
+    & td {
+      border: 1px solid black;
+      padding: 5px 10px;
+    }
   }
 }
