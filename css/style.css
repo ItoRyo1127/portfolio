@@ -95,4 +95,30 @@ h3 {
   border: 1px solid black;
   padding: 5px 10px;
 }
+
+.product {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.product .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product .wrapper .container:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.product .container {
+  width: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #000;
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=style.css.map */
