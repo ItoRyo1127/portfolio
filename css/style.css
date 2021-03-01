@@ -1,6 +1,9 @@
 @charset "UTF-8";
+/********* アイコン **********/
+/********* 黒 **********/
 /********* 白 **********/
 /********* 青 **********/
+/********* 黄 **********/
 /*************** PC 1260px~ ***************/
 body {
   font-size: 16pt;
@@ -10,6 +13,7 @@ body {
 header {
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
   -webkit-box-shadow: 0px 5px 0px -2px gray inset;
           box-shadow: 0px 5px 0px -2px gray inset;
 }
@@ -100,6 +104,41 @@ h3 {
   margin-top: 30px;
 }
 
+.skill .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.skill .container .item {
+  width: 200px;
+  height: 200px;
+  padding: 25px 25px;
+  margin-right: 50px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+.skill .container .item:nth-child(5n-4) {
+  margin-bottom: 50px;
+}
+
+.skill .container .item:nth-of-type(5n) {
+  margin-right: 0px;
+}
+
+.skill .container .item:nth-last-child(-n+5) {
+  margin-bottom: 0px;
+}
+
+.skill .container .item img {
+  width: 130px;
+  height: 130px;
+}
+
 .product {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -114,15 +153,75 @@ h3 {
 }
 
 .product .wrapper .container:nth-child(odd) {
-  margin-right: 30px;
+  margin-right: 15px;
+}
+
+.product .wrapper .container:nth-child(even) {
+  margin-left: 15px;
 }
 
 .product .container {
-  width: 570px;
+  width: 585px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 1px solid #000;
   margin-bottom: 30px;
+}
+
+footer li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+footer li .mail {
+  display: block;
+  font-size: 30px;
+  padding: 9px 9px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+
+footer li .mail:hover {
+  color: #39475D;
+  cursor: pointer;
+}
+
+footer li .twitter {
+  display: block;
+  font-size: 30px;
+  padding: 9px 9px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+
+footer li .twitter:hover {
+  color: #1DA1F2;
+  cursor: pointer;
+}
+
+footer li .github {
+  display: block;
+  font-size: 30px;
+  padding: 9px 9px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+
+footer li .github:hover {
+  color: #dddddd;
+  cursor: pointer;
+}
+
+footer .copy-right {
+  height: 50px;
+  background: #000;
 }
 /*# sourceMappingURL=style.css.map */
