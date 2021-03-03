@@ -51,11 +51,23 @@ h3 {
   margin-bottom: 15px;
 }
 
-.top-img {
-  width: 100%;
-  height: 100%;
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  height: 500px;
   max-height: 500px;
   margin-top: 50px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#00aaff), to(#f9e900));
+  background: linear-gradient(to bottom right, #00aaff, #f9e900);
+}
+
+.top .title {
+  margin: auto auto;
+  color: #fff;
+  font-weight: 900;
+  font-size: 50px;
 }
 
 .profile {
@@ -169,59 +181,69 @@ h3 {
   margin-bottom: 30px;
 }
 
-footer li {
+.contact li {
   display: inline-block;
   width: 50px;
   height: 50px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-bottom: 50px;
 }
 
-footer li .mail {
+.contact li .mail {
   display: block;
   font-size: 30px;
   padding: 9px 9px;
-  background: #fff;
   color: #000;
   border: 1px solid #000;
   border-radius: 50px;
 }
 
-footer li .mail:hover {
+.contact li .mail:hover {
   color: #39475D;
   cursor: pointer;
 }
 
-footer li .twitter {
+.contact li .twitter {
   display: block;
   font-size: 30px;
   padding: 9px 9px;
-  background: #fff;
   color: #000;
   border: 1px solid #000;
   border-radius: 50px;
 }
 
-footer li .twitter:hover {
+.contact li .twitter:hover {
   color: #1DA1F2;
   cursor: pointer;
 }
 
-footer li .github {
+.contact li .github {
   display: block;
   font-size: 30px;
   padding: 9px 9px;
-  background: #fff;
   color: #000;
   border: 1px solid #000;
   border-radius: 50px;
 }
 
-footer li .github:hover {
+.contact li .github:hover {
   color: #dddddd;
   cursor: pointer;
 }
 
-footer .copy-right {
+.copy-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 50px;
+  text-align: center;
+  color: #fff;
   background: #000;
+}
+
+.copy-right small {
+  font-size: 12px;
+  margin: auto auto;
 }
 /*# sourceMappingURL=style.css.map */
